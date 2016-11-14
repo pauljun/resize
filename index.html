@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<script src="resize.js"></script>
+	<style>
+		.box{font-size: .36rem;}
+	</style>
+</head>
+<body>
+	<div class='box'>我的什么是</div>
+	<script type="text/javascript">
+	    time = 1478657988400
+		var mon = time.getMonth()
+	    let y = time.getFullYear()
+	    let t = mon >= 10 ? mon : '0' + mon
+	    let d = time.getDate() >= 10 ? time.getDate() : '0' + time.getDate()
+	    let h = time.getHours() >= 10  ? time.getHours() : '0' + time.getHours()
+	    let m = time.getMinutes() >= 10  ? time.getMinutes() : '0' + time.getMinutes()
+	    let s = time.getSeconds() >= 10  ? time.getSeconds() : '0' + time.getSeconds()
+
+	    let fomart = y+'-'+t+'-'+d+' '+h+':'+m+':'+s
+	    alert(fomart) 
+	</script>
+</body>
+</html>
